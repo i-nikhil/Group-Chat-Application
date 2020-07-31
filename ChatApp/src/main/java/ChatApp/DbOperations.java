@@ -9,7 +9,7 @@ public class DbOperations//used JDBC
     public static Connection getConnection() throws SQLException
     {
         if(connection == null)
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/messenger", "root", "Gupta@Bhawan123");
+            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/messenger", "root", "password");
         return connection;
     }
 
