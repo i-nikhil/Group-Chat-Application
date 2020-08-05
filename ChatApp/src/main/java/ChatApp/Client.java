@@ -18,7 +18,7 @@ public class Client extends JFrame implements ActionListener
     public Client(String uname,String servername) throws Exception {
         super(uname);
         this.username = uname;
-        chatusers  = new Socket(servername,80);
+        chatusers  = new Socket(servername,15666);
         br = new BufferedReader( new InputStreamReader( chatusers.getInputStream()) ) ;
         pw = new PrintWriter(chatusers.getOutputStream(),true);
         pw.println(uname);
@@ -84,7 +84,7 @@ public class Client extends JFrame implements ActionListener
     public static void main(String[] args) {
         String userName = JOptionPane.showInputDialog(null,"Please enter your name to begin:", "Instant Chat Application",
                 JOptionPane.PLAIN_MESSAGE);
-        String servername = "localhost";
+        String servername = "0.tcp.ngrok.io";
         try {
             new Client( userName ,servername);
         } catch(Exception ex) {
