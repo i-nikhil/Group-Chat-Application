@@ -1,5 +1,5 @@
 # Group Chat Application -
-A Sprint Boot application built using Java Socket Programming. Watch the demo by clicking the image below..
+A Sprint Boot application built using Java Socket Programming. Watch the demo by clicking the image below.
 
 [<img src="https://img.youtube.com/vi/k36u4U7fp98/0.jpg" width="50%">](https://www.youtube.com/watch?v=k36u4U7fp98)
 
